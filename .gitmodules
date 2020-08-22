@@ -1,0 +1,9 @@
+[submodule "dwm"]
+	path = dwm
+	url = https://github.com/mushchlo/dotfiles.git/dwm
+[submodule "dmenu"]
+	path = dmenu
+	url = https://github.com/mushchlo/dotfiles.git/dmenu
+[submodule "dwmblocks"]
+	path = dwmblocks
+	url = https://github.com/mushchlo/dotfiles.git/dwmblocks
