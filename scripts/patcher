@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "What suckless program is this for? [DWM]/etc" && read prog
+[[ $prog == "" ]] && prog=dwm
+echo "What's the patch name?" && read name
+echo "What's the version name?" && read vers
+
+curl "https://$prog.suckless.org/patches/$name/$prog-$name-$vers.diff" >> $name.diff
+patch -p1 < $name.diff

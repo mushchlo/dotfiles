@@ -1,0 +1,8 @@
+#!/bin/bash
+
+[[ "$(bluetoothctl -- show | grep Powered | awk -F " " '{print $2}')" == "no" ]] && bluetoothctl -- power on && echo "was powered off" || echo "was powered on"
+bluetoothctl -- connect EC:81:93:87:78:0B
+until [[ -n $(pacmd list-sinks | grep Jaybird) ]]; do
+	sleep 0.1
+done
+kill -45 $(pidof dwmblocks)
