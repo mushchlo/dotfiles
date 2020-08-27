@@ -6,7 +6,7 @@
 #cell_width_scale = 1.0
 #clickable_url = true
 #dynamic_title = true
-font = SFMonoPowerline 10
+font = sfmono 10
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -62,11 +62,12 @@ highlight = #2f2f2f
 foreground      = #f0f0f0
 foreground_bold = #777777
 cursor          = #d8d7d2
-background      = rgba(48, 48, 56, 0.85)
+#background      = rgba(48, 48, 56, 0.85)
+background	= #202027
 # black
-color8  = #101010
-color0  = #373b41
-
+color8  = #444450
+#color0  = #373b41
+color0 = #202027
 # red
 color1  = #efa6a2
 color9  = #ffc8c7
@@ -93,7 +94,7 @@ color14 = #a1c3e9
 
 # white
 color15  = #d8d8d8
-color7 = #c0c0c0
+color7 = #d0d0d0
 
 # Colors from color0 to color254 can be set
 #color0 = #3f3f3f
