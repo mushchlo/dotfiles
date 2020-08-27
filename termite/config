@@ -62,8 +62,8 @@ highlight = #2f2f2f
 foreground      = #f0f0f0
 foreground_bold = #777777
 cursor          = #d8d7d2
-#background      = rgba(48, 48, 56, 0.85)
-background	= #202027
+background      = rgba(32, 32, 39, 0.95)
+#background	= #202027
 # black
 color8  = #444450
 #color0  = #373b41
