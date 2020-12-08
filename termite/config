@@ -1,1 +1,82 @@
-../termite/config
+[options]
+allow_bold = true
+audible_bell = false
+bold_is_bright = false
+clickable_url = true
+#dynamic_title = true
+font = tamzen 10
+#fullscreen = true
+#icon_name = terminal
+mouse_autohide = true
+#scroll_on_output = false
+scroll_on_keystroke = true
+# Length of the scrollback buffer, 0 disables the scrollback buffer
+# setting it to a negative value means "infinite scrollback"
+scrollback_lines = 10000
+#search_wrap = true
+#urgent_on_bell = true
+#hyperlinks = false
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+#browser = xdg-open
+
+# "system", "on" or "off"
+cursor_blink = off
+
+# "block", "underline" or "ibeam"
+#cursor_shape = block
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+# "off", "left" or "right"
+scrollbar = off
+
+# If unset, will reverse foreground and background
+highlight = #2f2f2f
+
+[colors]
+
+# special
+foreground      = #444444
+foreground_bold = #aaaaaa
+cursor          = #d8d7d2
+background      = #f4f4e6
+
+# black
+color0  = #444444
+color8  = #f4f4e6
+
+# red
+color1  = #996060
+color9  = #c46a6a
+
+# green
+color2  = #639265
+color10 = #75b77b
+
+# yellow
+color3  = #9d9d6a
+color11 = #bbbf71
+
+# blue
+color4  = #7083a0
+color12 = #90a8ca
+
+# magenta
+color5  = #82668b
+color13 = #b499ba
+
+# cyan
+color6  = #679a9c
+color14 = #90b9bf
+
+# white
+color7  = #d3bb9a
+color15 = #eddfcb

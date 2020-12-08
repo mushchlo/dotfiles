@@ -1,0 +1,2 @@
+#!/bin/sh
+drawterm -h 66.68.92.119 -a 66.68.92.119 -u glenda -e 'Checker$314'

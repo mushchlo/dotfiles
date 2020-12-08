@@ -1,0 +1,2 @@
+#!/bin/sh
+[ -z "$(echo $* | grep \\.)" ] && firefox "https://duckduckgo.com/?q=$*" || firefox "$*"

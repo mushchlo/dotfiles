@@ -1,0 +1,7 @@
+#!/bin/sh
+
+qemu-system-x86_64 -cpu host -enable-kvm -m 1024 \
+	-net nic,model=virtio,macaddr=52:54:00:00:EE:03 \
+	-net user -net vde -device virtio-scsi-pci,id=scsi \
+	-soundhw sb16 -usb -device usb-tablet \
+	-drive if=none,id=vd0,file=/home/chloe/9/9front.qcow2.img -device scsi-hd,drive=vd0

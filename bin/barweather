@@ -1,0 +1,10 @@
+#!/bin/bash
+
+weather=$(curl 'wttr.in/lakeway\?format=%C%t|%S/%s' | sed 's/_/ /')
+
+[[ $(date +%-H%M%S) -gt $(sed -r 's/^.*\|//; s/^0//; s/://g; s/\/.*$//' <<< "$weather") ]] && [[ $(date +%-H%M%S) -lt $(sed -r 's/^.*\///; s/^0//; s/://g' <<< "$weather") ]] && day=1 || day=0
+
+[[ $day == 1 ]] && weather=$(sed -r 's/Clear//; s/Sunny/ /; s/Partly cloudy/ /; s/(Patchy rain possible)|(Moderate rain at times)/ /; s/Rain//; s/Light rain shower//; s/(Heavy rain)|(Moderate or heavy rain shower)//; s/Overcast/ /; s/Light rain//; s/Haze/ /; s/\+//; s/,.*\+/ /; s/\|.*$//' <<< "$weather")
+
+[[ $day == 0 ]] && weather=$(sed -r 's/Clear//; s/Partly cloudy/ /; s/(Patchy rain possible)|(Moderate rain at times)/ /; s/Rain//; s/Light rain shower//; s/(Heavy rain)|(Moderate or heavy rain shower)//; s/Overcast/ /; s/Light rain//; s/Haze/ /; s/\+/ /; s/,.*\+//; s/\|.*$//' <<< "$weather")
+echo "$weather"

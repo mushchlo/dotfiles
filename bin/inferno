@@ -1,0 +1,3 @@
+#!/bin/sh
+
+[[ -n "$*" ]] && emu -r/home/chloe/purgatorio -g"$*" -s wm/wm || emu -r/home/chloe/purgatorio -g850x1020 -s wm/wm
